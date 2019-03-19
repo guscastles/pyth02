@@ -160,16 +160,9 @@ Run it!
 
 6. Type the following command:
 
-**Mac/Linux**
-
 ```bash
 python3 solution.py
-```
-
-**Windows**
-
-```bash
-py solution.py
+# Note: Some of you might not need the '3'
 ```
 
 7. Until you get the expected output, you can make changes to your code and run it again to see if you have the answer. Repeat as needed!

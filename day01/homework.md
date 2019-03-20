@@ -32,6 +32,7 @@ For the challenges below, you will create a new `.py` file and write code to sol
 
 ```python
 python3 solution.py
+# Note: Some of you might not need the '3'
 ```
 
 > **Hint**: Make sure you are printing something out with the print statement! Otherwise, you won't see any output from running your program!

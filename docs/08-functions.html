@@ -356,7 +356,14 @@ print_order()</code></pre></div>
 </section>
 <section id="addressing-the-repetition" class="level2">
 <h2>Addressing the repetition</h2>
-<p>We can dynamically pass a function values. This is a <strong>parameter</strong>.</p>
+<p>We can dynamically pass a function one or more values. We use two names to talk about these values:</p>
+  <ul>
+    <li>a <strong>parameter</strong>: when we talk about the <strong>defintion</strong> of the function<br>
+      <em>i.e. the number of values a function accepts, and their names</em></li>
+    <li>an <strong>argument</strong>: when we talk about <strong>using</strong> the function<br>
+      <em>i.e. the values passed in for a specific call to the function</em></li>
+  </ul>
+
 <div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> print_order(product):
   <span class="bu">print</span>(<span class="st">&quot;Thank you for ordering the&quot;</span>, product, <span class="st">&quot;.&quot;</span>)
 
@@ -425,7 +432,7 @@ print_order(<span class="st">&quot;Modern Shag Rug&quot;</span>)</code></pre></d
 <h2>Partner Exercise: Thanks a Latte</h2>
 <p>Pair up! Decide who will be the driver and who will be the navigator.</p>
 <p>Imagine that you are tasked with creating a program to calculate the total amount, including sales tax, for each item at a coffee shop.</p>
-<p>Create a new file, <code>latte.py</code>, and type the two functions below into it, which will calculate the total amount for two drinks:</p>
+<p>Create a new file, <code>latte.py</code>, and type the two functions below into it:
 <div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> latte_total():
   price <span class="op">=</span> <span class="fl">5.50</span>
   sales_tax_rate <span class="op">=</span> 0.<span class="dv">10</span>
@@ -603,7 +610,7 @@ do_something(a_different_argument_1, a_different_argument_2)</code></pre></div>
 <hr />
 </section>
 <section id="the-return" class="level2">
-<h2>The Return</h2>
+<h2>The <code>return</code> statement</h2>
 <p>Sometimes, we want values <em>back</em> from functions.</p>
 <div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> calculate_total(price, taxes):
   total_amount <span class="op">=</span> price <span class="op">+</span> (price <span class="op">*</span> taxes)
@@ -771,7 +778,7 @@ rock_and_roll(<span class="va">True</span>)</code></pre></div>
 <h2>Another Knowledge Check</h2>
 <p>Take this simple <code>adder</code> function:</p>
 <div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> adder(number1, number2):
- <span class="cf">return</span> number1 <span class="op">+</span> number2</code></pre></div>
+ <span class="cf">  return</span> number1 <span class="op">+</span> number2</code></pre></div>
 <p>Which of the following statements will result in an error?</p>
 <p>A. <code>adder(10, 100.)</code> <br> B. <code>adder(10, '10')</code> <br> C. <code>adder(100)</code> <br> D. <code>adder('abc', 'def')</code> <br> E. <code>adder(10, 20, 30)</code> <br></p>
 <aside class="notes">

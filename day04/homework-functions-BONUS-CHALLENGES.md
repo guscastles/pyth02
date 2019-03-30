@@ -10,7 +10,7 @@ replace_letters(input, letters_to_replace, replacement)
 ```
 where:
 
- - `input` is the input string whose characters you want to replace
+ - `input_string` is the input string whose characters you want to replace
  - `letters_to_replace` is a either a string OR list of the
    characters to be replaced
  - `replacement` is a string (could be one OR MORE characters)

@@ -6,7 +6,7 @@
 
 Starting with the code from the last challenge (replacing letters with underscores), refactor to create a function called `replace_letters` which does all the work. The function should have the following parameters:
 ```python
-replace_letters(input, letters_to_replace, replacement)
+replace_letters(input_string, letters_to_replace, replacement)
 ```
 where:
 

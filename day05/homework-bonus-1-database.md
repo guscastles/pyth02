@@ -1,4 +1,4 @@
-### Build a database!
+## Build a database using a dictionary
 
 Use a nested dictionary to create a database of movies, books, albums,
 or whatever you want, with appropriate fields for each item.
@@ -29,9 +29,11 @@ db = {
 }
 ```
 
-Create functions to let a user:
+### Create functions to let a user:
 
 1. Lookup an item by the top level key (which we'll call the ID) and print out a formatted entry of all the fields for the record found, e.g. `find_by_id(db, 'ulysses')`. A polite error message should be printed if the key does not exist.
-2. Search for an item by the value of a specific fields, e.g. `find_by_field(db, 'year', 1984)`. It should print the details of any record that matches. Bonus: allow substring matches for string values.
+2. Search for an item by the value of a specific fields, e.g. `find_by_field(db, 'year', 1974)`. It should print the details of any record that matches. Bonus: allow substring matches for string values.
 3. Add a new item by passing in the key-value pairs as keyword arguments, e.g.
 `create_record(db, 'debt', full_title='Debt: The First 5,000 Years', author='David Graeber', ...etc...)`. Your function should give an error if a record with the same ID (top-level key) already exists!
+4. Edit an item interactively, specifying the ID in the function call, and then using input() to update each key-value pair, after printing the current value for that key (use a for loop to do this). Bonus: allow the user to just press enter to keep the existing values.
+5. Work out how to save/load your dictionary to/from disk, so any changes made are preserved (hint: 'pickle').

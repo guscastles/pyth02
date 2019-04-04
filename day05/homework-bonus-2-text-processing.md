@@ -33,7 +33,7 @@ my_choice = choice(my_list)
 ```
 
 3. How could you make sure that you always start your generated text with a word that is the start of a sentence from the original text (without cheating and just capitalizing the word yourself)?
-4. How could you combine the markov tables of two or more input texts to generate a blended-style remix of the original texts?
-5. How could you change the **granularity** of your markov table so that it keeps track not just of whole words and the words that follow them, but shorter strings of characters than words: i.e., a table of which single characters follow any N-character (i.e. 3-character) string in a text? (This will require you to loop through the input text not as a list of strings, but as one single long string of characters.) Text generated from such a table will tend to make up new words for small values of N like 2 or 3 (i.e. the characters following all 3-character strings), but start to reproduce existing words when N gets closer to the length of average words, i.e. 5 or 7.
+4. How could you combine the Markov tables of two or more input texts to generate a blended-style remix of the original texts?
+5. How could you change the **granularity** of your Markov table so that it keeps track not just of whole words and the words that follow them, but shorter strings of characters than words: i.e., a table of which single characters follow any N-character (i.e. 3-character) string in a text? (This will require you to loop through the input text not as a list of strings, but as one single long string of characters.) Text generated from such a table will tend to make up new words for small values of N like 2 or 3 (i.e. the characters following all 3-character strings), but start to reproduce existing words when N gets closer to the length of average words, i.e. 5 or 7.
 ---
 Some more info on Markov chains here: https://www.youtube.com/watch?v=v4kL0OHuxXs

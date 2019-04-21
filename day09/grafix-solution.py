@@ -194,9 +194,8 @@ for i in range(circle_count):
 
 
 # Main draw loop
-d = 0
 while True:
-    d += 1
+    
     # Loop through any pending events. The body of this loop is now long enough that
     # it deserves its own function, keeping the body of this 'while' loop short.
     for event in pygame.event.get():

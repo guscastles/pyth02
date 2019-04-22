@@ -53,6 +53,14 @@ def print_movie_details(movie):
     else:
         revenue_to_budget = 'n/a'
 
+
+    # The poster_path might also be empty, so check first:
+    if movie['poster_path']:
+        poster_url = POSTER_BASE_URL + movie['poster_path'],
+    else:
+        poster_url = 'n/a'
+
+
     # Big print statement which passes the unpacked dictionary to format()
     # by using '**details', allowing us to directly access the details values
     # by key. But we can also add new key-value pairs to what we pass in
@@ -75,7 +83,7 @@ def print_movie_details(movie):
         year = movie['release_date'].split('-')[0], # get just the year
         genre_list = ', '.join(genres),
         revenue_to_budget = revenue_to_budget,
-        poster = POSTER_BASE_URL + movie['poster_path'],
+        poster = poster_url,
         imdb = IMDB_BASE_URL + movie['imdb_id'],
         overview_wrapped = textwrap.fill(movie['overview'], 60)  # wrap at 60 chars!
     ))

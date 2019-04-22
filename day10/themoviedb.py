@@ -1,3 +1,18 @@
+# 'themoviedb.org' API search module
+#
+# Functions:
+#
+# search_movies(query)
+#     search for movie by query string; returns results dict
+#
+# print_search_results(results)
+#     print out formatted search results
+#
+# get_movie_details(id)
+#    get details for a specific movie by ID; returns details dict
+#
+# print_movie_details(movie)
+#    prints formatted details for one movie, given a movie details dict
 
 import requests
 from termcolor import colored  # simple coloured text in terminal!

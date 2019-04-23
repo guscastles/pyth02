@@ -1,0 +1,58 @@
+
+body {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+  transition: 2s;
+  height: 200px;
+}
+
+img:hover{
+  height: 100%;
+  transform: rotate(720deg) scale(3);
+  filter: hue-rotate(360deg);
+}
+
+h1 {
+  border-bottom: 5px solid black;
+}
+
+h2 {
+  color: #e51b24;
+}
+
+.faded {
+  opacity: 0.5;
+}
+
+main {
+  /* set a maximum width for the main content */
+  max-width: 800px;
+  margin: auto;
+  /* border: 1px solid red; */
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* these rules will apply ONLY to screens
+   with a width of UP TO 600px */
+@media (max-width: 600px) {
+
+  body {
+    background-color: hotpink;
+  }
+
+  p {
+    font-family: Comic Sans MS;
+  }
+
+}

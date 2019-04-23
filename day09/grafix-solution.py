@@ -85,6 +85,11 @@ def detect_nearby_circles(circle, distance_threshold=70):
     """Calculate the distance between the circle passed in and every other
     circle, and draw a line to any that are within the threshold distance."""
 
+    # Notice that if we build up this solution using other functions, we don't
+    # have to even mention x,y positions in this current function at all.
+    # We just talk about whole circles, and functions which do things
+    # with them. That's abstraction!
+
     for other_circle in circles:
         dist = distance_between_circles(circle, other_circle)
         if dist < distance_threshold:
@@ -195,7 +200,7 @@ for i in range(circle_count):
 
 # Main draw loop
 while True:
-    
+
     # Loop through any pending events. The body of this loop is now long enough that
     # it deserves its own function, keeping the body of this 'while' loop short.
     for event in pygame.event.get():

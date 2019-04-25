@@ -1,0 +1,26 @@
+
+body {
+  font-family: Comic Sans MS;
+  background-color: hotpink;
+}
+
+p {
+  font-family: Courier New;
+  font-weight: bold;
+}
+
+main {
+  max-width: 900px;
+  margin: auto; /* this container will be centered */
+}
+
+img {
+  max-width: 200px;
+  transition: 2s;
+}
+
+/* The following rules apply when the element (img) is being hovered over with the mouse  */
+img:hover{
+  /* border: 2px solid green; */
+  /* transform: rotate(7deg) scale(2); */
+}

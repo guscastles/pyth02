@@ -1,0 +1,18 @@
+
+* {
+  /* border: 1px solid green; */
+}
+
+li {
+  border: 1px solid red;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Apply these styles to just this class */
+.special {
+  color: red;
+  font-family: Comic Sans MS;
+}

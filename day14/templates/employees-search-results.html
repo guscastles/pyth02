@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Employee Index</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>Employee Search Results for "{{ query }}"</h1>
+
+  <form action="/employees/search">
+    Query:
+    <input type="text" name="search_text" value="{{ query }}">
+    <input type="submit" value="Search">
+  </form>
+
+  <br>
+
+  {% include 'employees-table.html' %}
+
+</body>
+</html>

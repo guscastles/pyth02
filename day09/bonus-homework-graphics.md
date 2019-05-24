@@ -1,4 +1,4 @@
-## PYTH02 Bonuc Challenges: 2D Grpahics with PyGame
+## PYTH02 Bonuc Challenges: 2D Graphics with PyGame
 
 **Bonus features to add:**
 - Make the circle bounce off the edges so it never leaves the screen
@@ -13,9 +13,9 @@ circle and drawing it to the screen
 and draw a line between any two circles that get closer to each other than some
 minimum distance (e.g. 200 pixels). To calculate the distance between two sets
 of x, y coordinates you will need the "Distance Formula" (which comes from the
-Pythagorean Theorem)
+Pythagorean Theorem).
 - Use the `pygame.mixer` sound module to play a bouncing sound whenever one of
 the cirlces bounces off an edge (this actually sounds cool, especially if you
 use a different sound sample for top/bottom vs left/right edges).
-6- Use the up/down arrow keys to increase/decrease the overall speed of the
+- Use the up/down arrow keys to increase/decrease the overall speed of the
 circles.

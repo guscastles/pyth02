@@ -1,0 +1,7 @@
+## PYTH02 BONUS HOMEWORK CHALLENGE: Flickr Search web interface
+
+1. Work out the URL you need to construct in order to search the Flickr photo site via the API. The API docs are here: https://www.flickr.com/services/api/ and my API key is `_____(REDACTED)_____`. Make sure you ask for a JSON-format response from the API!
+2. Once you have search working via the `requests` library, create your own module (`flickr_api` or similar) with a function to do the searching for you. The function should return the JSON results from the API.
+3. Create a Flask webserver with a blank search form at the root route `/`. The form should submit to a `/search` route, which will use your Flickr search module to get the results of a search. You should pass these results to an HTML template which will loop through the results and print a thumbnail image for each result. Instructions on how to construct an image URL from the data you get for each search result are here:  https://www.flickr.com/services/api/misc.urls.html
+4. Make each search result thumbnail into a clickable link with a url like `/photo/PHOTOID`, and create a new route to handle this URL. It should make another request to the photo details API endpoint to get more information about the photo, which you should display in an HTML template, along with a larger version of the photo.
+5. Experiment with the different kinds of search queries you can make for photos, i.e. searching by geolocation, date uploaded, most popular, etc. Can you make a form which lets the user optionally search by these criteria?

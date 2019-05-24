@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Employee Index</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>Add New Employee</h1>
+
+   <form action="/employees/add" method="post">
+     First Name: <input type="text" name="first_name"> <br>
+     Last Name: <input type="text" name="last_name"> <br>
+     Job Title: <input type="text" name="job_title"> <br>
+     Hire Date: <input type="text" name="hire_date"> <br>
+     Performance Review: <input type="text" name="performance_review"> <br>
+     <br>
+     <input type="submit" value="Add">
+   </form>
+
+</body>
+</html>

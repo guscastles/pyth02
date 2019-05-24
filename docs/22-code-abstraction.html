@@ -347,8 +347,7 @@ colors <span class="op">=</span> [<span class="st">&#39;red&#39;</span>, <span c
 <span class="bu">print</span>(chained_list)</code></pre></div>
 <p><strong>Answer 1</strong>: <code>itertools.chain</code> is more efficient - it's faster, even if it's still too fast for you to notice the difference.</p>
 <p><strong>Answer 2</strong>: <code>itertools.chain</code> can contain different types of iterables.</p>
-<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="im">import</span> itertools
-
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"   style="height: 300px"><span class="im">import</span> itertools
 food_list <span class="op">=</span> [<span class="st">&quot;apples&quot;</span>, <span class="st">&quot;bananas&quot;</span>, <span class="st">&quot;oranges&quot;</span>]
 numbers_range <span class="op">=</span> <span class="bu">range</span>(<span class="dv">4</span>)
 colors_dictionary <span class="op">=</span> {
@@ -506,12 +505,13 @@ primes <span class="op">=</span> [<span class="dv">2</span>, <span class="dv">3<
 <p><code>itertools</code> provides abstraction for iterating over lists. We're done with them!</p>
 <p>Let's move on - what about building a new list that's slight modified of another list? This is <em>extremely</em> common, so Python provides for us <strong>list comprehensions</strong>.</p>
 <p>For anything where you can make:</p>
-<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="cf">for</span> item <span class="kw">in</span> old_list:
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">new_list = []
+  <span class="cf">for</span> item <span class="kw">in</span> old_list:
     <span class="cf">if</span> <span class="op">&lt;</span> condition <span class="op">&gt;</span>
       new_list.append(<span class="op">&lt;</span> modification <span class="op">&gt;</span>)</code></pre></div>
 <p>You can use list comprehension syntax instead:</p>
 <div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">new_list <span class="op">=</span> [modification  old_list  [condition]]</code></pre></div>
-<p>It turns 3 lines of code into one!</p>
+<p>It turns 4 lines of code into one!</p>
 <aside class="notes">
 <p><strong>Teaching Tips</strong>:</p>
 <ul>
@@ -633,11 +633,11 @@ squares_even_2 <span class="op">=</span> [i<span class="op">**</span><span class
 <p>Let's say we have a string containing both numbers and letters:</p>
 <div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">my_string <span class="op">=</span> <span class="st">&#39;99 fantastic 13 hello 2 world&#39;</span></code></pre></div>
 <p>We want to write a list comprehension that will make a new list containing only the numbers that appear.</p>
-<ul>
-<li>What is our <code>modification</code>?</li>
-<li>What is our <code>old_list_iteration</code>?</li>
-<li>What is our <code>condition</code>?</li>
-</ul>
+<p>
+What is our <code>modification</code>?
+What is our <code>old_list_iteration</code>?
+What is our <code>condition</code>?
+</p>
 <aside class="notes">
 <p><strong>Teaching Tips</strong>:</p>
 <ul>

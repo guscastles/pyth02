@@ -204,7 +204,7 @@ In this lesson, students will:
 </section>
 <section id="we-do-defining-classes" class="level2">
 <h2>We Do: Defining Classes</h2>
-<p>Follow along! Let's create a new file, <code>Dog.py</code></p>
+<p>Follow along! Let's create a new file, <code>dog.py</code></p>
 <p>Class definitions are similar to function definitions, but instead of <code>def</code>, <code>class</code> is used.</p>
 <p>Let's declare a class for <code>Dog</code>:</p>
 <div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="kw">class</span> Dog():
@@ -213,7 +213,7 @@ In this lesson, students will:
 <figure>
 <img src="https://s3.amazonaws.com/ga-instruction/assets/programming-fundamentals/class-dog-name-age.png" />
 </figure>
-<p><strong>Protip:</strong> Files are usually named for their class - the <code>Dog</code> class is in <code>Dog.py</code>.</p>
+<p><strong>Protip:</strong> Files are usually named for their class - the <code>Dog</code> class is in <code>dog.py</code>.</p>
 <aside class="notes">
 <p><strong>Teaching Tips</strong>:</p>
 <ul>
@@ -232,8 +232,8 @@ In this lesson, students will:
 <h2>We Do: The <code>init</code> Method</h2>
 <p>What first? Every class starts with an <code>__init__</code> method:</p>
 <ul>
-<li>Where we define the class' variables.</li>
-<li>Short for &quot;initialize&quot;.</li>
+<li>Short for &quot;initialize&quot;, <em>i.e.</em></li>
+<li>Where we initialise the variables that belong to this class (attributes).</li>
 <li>&quot;Every time you make an object from this class, do what's in here.&quot;</li>
 </ul>
 <p>Let's add this:</p>
@@ -243,7 +243,7 @@ In this lesson, students will:
     <span class="co"># Note the optional parameters and defaults.</span>
     <span class="va">self</span>.name <span class="op">=</span> name <span class="co"># All dogs have a name</span>
     <span class="va">self</span>.age <span class="op">=</span> age <span class="co"># All dogs have an age</span></code></pre></div>
-<p><em>Note: <code>self</code> means &quot;each individual object made from this class&quot;. Not every &quot;dog&quot; has the same name!</em></p>
+<p><em>Note: <code>self</code> means &quot;the current specific object made from this class&quot;. <br>Not every &quot;dog&quot; has the same name!</em></p>
 <aside class="notes">
 <p><strong>Teaching Tips</strong>:</p>
 <ul>
@@ -605,7 +605,7 @@ sheera.bark_hello()</code></pre></div>
 <li>Create a class variable, <code>number_of_bands</code>, that tracks the number of bands created.</li>
 </ul>
 <p>Test your code with calls like:</p>
-<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">my_band <span class="op">=</span> (<span class="st">&quot;Slint&quot;</span>, <span class="dv">2</span>, <span class="st">&quot;rock&quot;</span>)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">my_band <span class="op">=</span> Band(<span class="st">&quot;Slint&quot;</span>, <span class="dv">2</span>, <span class="st">&quot;rock&quot;</span>)</code></pre></div>
 <p><strong>Bonus:</strong> If the genre provided isn't <code>&quot;pop&quot;</code>, <code>&quot;classical&quot;</code>, or <code>&quot;rock&quot;</code>, print out <code>&quot;This isn't a genre I know.&quot;</code></p>
 <aside class="notes">
 <p>5-10 minutes</p>
@@ -759,8 +759,8 @@ Explanation: &quot;The possible list is defined at the class level as opposed to
 <h2>Summary and Q&amp;A</h2>
 <p>Class:</p>
 <ul>
-<li>A pre-defined structure that contains attributes and behaviors that are grouped together.</li>
-<li>The blueprint</li>
+<li>A pre-defined structure that contains attributes (data) and behaviors (functions) that are grouped together.</li>
+<li>The blueprint for making an object</li>
 <li>Defined via a method call</li>
 <li>Contain an <code>__init__</code> method that takes in parameters to be assigned to an object.</li>
 <li>The Dog class; the List class.</li>

@@ -187,14 +187,15 @@ In this lesson, students will:
 <span class="kw">def</span> my_func1():
   x <span class="op">=</span> <span class="dv">1</span>
   <span class="bu">print</span>(x) <span class="co"># 1 - Python checks local scopes first.</span>
-
 <span class="kw">def</span> my_func2():
   x <span class="op">=</span> <span class="dv">5</span>
   <span class="bu">print</span>(x) <span class="co"># 5 - Python checks local scopes first.</span>
+<span class="kw">def</span> my_func3():
+  <span class="bu">print</span>(x) <span class="co"># 2 - No local x, so Python uses the global variable</span>
 
 my_func1()
 my_func2()
-
+my_func3()
 <span class="bu">print</span>(x) <span class="co"># 2 - Python found no local scope; prints global variable.</span></code></pre></div>
 <aside class="notes">
 <p><strong>Talking Points</strong>: - &quot;If some variables are specifically local, what are the variables outside of a function or class called?&quot;</p>

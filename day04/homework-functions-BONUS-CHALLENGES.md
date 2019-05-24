@@ -38,7 +38,7 @@ print('=========================')
 Make `replacement` an optional argument whose value defaults to an underscore (`_`). Test this new version by calling it with and without this argument!
 
 
-### Part 3. (harder!)
+### Part 3.
 
 Copy-paste your new `replace_letters` function and rename the copy to `replace_letters_args`. This version of the function should require the
 letters-to-be-replaced to be specified as multiple individual arguments **instead of** as a string or list (allowing both is too hard).
@@ -53,10 +53,10 @@ This might make it impossible for your function to know what the optional `repla
 
 ### Part 4.
 
-Add another optional argument, `error_on_fail`, which defaults to false,
-but when true will keep count of how many characters were replaced. If no
-characters were replaced at all, it should print an error message "Error: no  matches!" and return an empty string, instead of the original string.
+Add another optional argument, `error_on_fail`, which defaults to False,
+but when true will keep count of how many characters were replaced, and if no
+characters were replaced at all by the end of the string, it should print an error message "Error: no  matches!" and return an empty string, instead of the original string.
 
 ### Part 5.
 
-What would you need to do to have the function return BOTH the changed string AND the number of characters that were replaced? (Note: I do mean RETURN those values from the function, not print them).
+What would you need to do to have the function return BOTH the changed string AND the number of characters that were replaced? (Note: I do mean RETURN those values from the function, not just print them from inside the function).

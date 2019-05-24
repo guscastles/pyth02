@@ -1,6 +1,5 @@
 ## Bonus challenges: Text processing
 
----
 #### Word Frequencies
 1. Build on the `word-count.py` code from class, but instead of providing the short string to analyse in a  variable at the top of the Python script file, work out how to load the string from a separate text file (this only requires 2-3 extra lines of code). Start with a small text file with just a paragraph or two of plain text pasted into it. Once you can see that your code is working, use a larger free ebook from [Project Gutenberg](http://www.gutenberg.org/ebooks/search/?sort_order=downloads) as your input file (make sure to download the "Plain Text UTF-8 version", **not** an HTML or ebook version).
 2. (HARD!) Your new dictionary of word frequencies will now be very large, too large to print easily. You can look up the frequency of single words easily, but how will you find out what the most frequently-used words are, when the dictionary is not ordered? Hint: turn your dictionary into a list of tuples containing all the key-value pairs in your dictionary using `list(word_count.items())`, and then find out how to sort this list based on the second value in each tuple (googling required!). Now you have a large list sorted by frequency, but it's still too large to print easily. How can you print out just the 50 most frequent words? (Hint: use Python's list slice syntax.)
